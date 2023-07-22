@@ -36,7 +36,26 @@
 	</div>
 </div>
 
-<div class="bg-white rounded-b-[2.5rem]">
+<div class="bg-white rounded-b-[2.5rem] hidden min-[1070px]:block">
+	<div class="text-center bg-[url('./img4.jpg')] bg-cover w-full h-[90vh] bg-no-repeat mt-14 pt-5 rounded-[2.5rem] flex justify-end items-end">
+		<div class="box mr-14 mb-20 bg-white bg-opacity-50 rounded-xl px-6 py-3">
+			<p class="text-gray-900 font-semibold text-xl">Welcome, User</p>
+			<p class="font-bold text-2xl mt-2">Book your first blood test</p>
+			<div class=" relative flex space-x-3 bg-gray-100 w-11/12 m-auto mt-8 p-3 px-5 rounded-xl focus:outline-purple-600 ">
+				<i class="fa-solid fa-magnifying-glass mt-1"></i>
+				<input type="text" placeholder="Choose a lab" class="bg-gray-100 w-full text-gray-800 font-semibold focus:outline-none">
+				<i id='a1' class="fa-solid {m == false ? 'fa-angle-down' : 'fa-angle-up'}  mt-1" on:click={menubar}></i>
+				{#if m}
+					<div class="absolute z-20 text-left px-4 py-3 top-14 -left-3 bg-white w-full h-32 rounded-lg shadow-md shadow-gray-500">
+						<p class="font-bold">Aware Lab • <span class="font-normal"> Rosenthaler</span></p>
+					</div>
+				{/if }
+			</div>
+			<button class="bg-gray-800 bg-opacity-60 text-white py-2 px-5 rounded-lg my-5">Continue <i class="fa-solid fa-arrow-right ml-2"></i></button>
+		</div>
+	</div>
+</div>
+<div class="bg-white rounded-b-[2.5rem] hidden max-[1070px]:block">
 	<div class="text-center bg-white mt-12 pt-5 rounded-b-[2.5rem]">
 		<p class="text-gray-500 font-semibold text-xl">Welcome, User</p>
 		<p class="font-bold text-2xl mt-2">Book your first blood test</p>
